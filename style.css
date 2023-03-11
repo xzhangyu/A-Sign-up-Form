@@ -1,14 +1,14 @@
 :root {
     --color: #e6007e;
-    --txt: rgb(185, 185, 185);
+    --txt: black;
 }
 
 * {
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
     color: var(--txt);
+    font-family: 'Courier New', Courier, monospace;
 }
 
 .content {
@@ -16,12 +16,14 @@
     height: 100vh;
 }
 
-.content,.logo{
-    display:flex;
+.content,
+.logo {
+    display: flex;
     flex-flow: row wrap;
 }
 
-.picture{
+/* 问题：背景图片被放大了 */
+.picture {
     background-image: url(images/background.jpg);
     background-position: center;
     background-size: auto;
@@ -29,21 +31,92 @@
     width: 35vw;
 }
 
-.logo{
+.logo {
     background-color: rgba(0, 0, 0, 0.45);
-    position:relative;
-    top:20vh;
+    position: relative;
+    top: 20vh;
     justify-content: center;
     align-items: center;
+    padding: 10px;
 
 }
 
-.odin{
-    height:15vh;
+.odin {
+    height: 13vh;
 }
 
-.name{
-    color:white;
+.name {
+    color: white;
+    font-size: 70px;
+    padding-top: 15px;
+}
+
+.right {
+    width: 65vw;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+}
+
+.intro {
+    font-size: 1.1rem;
+    width: 85%;
+}
+
+p,
+i {
+   
+}
+
+.left {
+    padding-left: 3vw;
+}
+
+.remote {
+    margin: 40px 0 80px;
+}
+
+.form {
+    background-color: whitesmoke;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    gap:20px;
+}
+
+.input{
+    font-size: 0.7rem;
+    display: flex;
+    flex-flow: column;
+    width: 35%;
+}
+.form-title{
+    width:100%;
+    font-weight: 600;
+    font-size: 1.2rem;
+}
+
+button{
+    font-size: 0.9rem;
+    margin: 20px 0;
+    padding: 10px 40px;
+    border-radius: 10px;
+    border: 2px solid white;
+    background-color: rgb(112, 158, 112);
+    color: white;
+}
+
+.AlreadyAccount{
+    display: flex;
+    gap: 10px;
+    font-size: 0.9rem;
+}
+
+.logIn{
+    color: green;
+    font-weight: bold;
 }
 
 /* img{
