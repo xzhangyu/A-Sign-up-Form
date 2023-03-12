@@ -103,9 +103,9 @@ button{
     margin: 20px 0;
     padding: 10px 40px;
     border-radius: 10px;
-    border: 2px solid white;
     background-color: rgb(112, 158, 112);
     color: white;
+    border:1px solid rgb(112, 158, 112);
 }
 
 .AlreadyAccount{
@@ -115,14 +115,37 @@ button{
 }
 
 .logIn{
-    color: green;
+    color:rgba(0, 128, 0, 0.656);
     font-weight: bold;
 }
 
-/* img{
-    width: 100vw;
-    height: 100vh;
-} */
+.logIn:hover{
+    color: green;
+}
+
+input{
+    border: grey solid 0.5px;
+    border-radius: 4px;
+    height:1.7rem;
+    /* font-size: large; */
+}
+
+input:focus{
+    outline: none !important;
+    border:1px solid rgb(20, 146, 11);
+    border-width: 0.15rem;
+}
+
+input:invalid{
+    outline: none !important;
+    border:1px solid rgb(251, 0, 0);
+}
+
+button:hover{
+    color:rgb(112, 158, 112);
+    background-color: white;
+    border:1px solid rgb(112, 158, 112);
+}
 
 
 
